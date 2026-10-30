@@ -1,7 +1,12 @@
 #include <iostream>
 #include <iomanip>
+#include <windows.h> // кодировка с смд шиндоус
 
 int main() {
+    // утф-8 для работы внутри консоли у нейронки спросил
+    SetConsoleCP(CP_UTF8);
+    SetConsoleOutputCP(CP_UTF8);
+
     int n;
     std::cout << "введите N: ";
     if (!(std::cin >> n)) {
